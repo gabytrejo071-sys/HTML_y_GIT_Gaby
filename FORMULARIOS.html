@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS (FORMS)</title>
+</head>
+<body>
+    <form action="registrardatos.php" method="post">
+        <!--INPUT TEXT Y SUBMIT-->
+        Nombre:
+        <input type="text" name="Nombre" size="20">
+        <input type="submit" value="Enviar">
+        <br><br>
+
+        <!--INPUT PASSWORD Y RESET-->
+        Clave:
+        <input type="password" name="Clave" size="22">
+        <input type="reset" value="Borrar">
+        <br><br>
+
+        <!--AREA DE TEXTO-->
+        Comentarios:
+        <br>
+        <textarea name="Comentarios" rows="10" cols="29"></textarea>
+        <br><br>
+
+        <!--INPUT CHECKBOX-->
+        Seleccione sus favoritas de las siguientes princesas de Disney:
+        <br>
+        <input type="checkbox" name="Bella"> Bella <br>
+        <input type="checkbox" name="Aurora"> Aurora <br>
+        <input type="checkbox" name="Mulan"> Mulan <br>
+        <input type="checkbox" name="Tiana"> Tiana <br>
+        <input type="checkbox" name="Moana"> Moana <br>
+        <input type="checkbox" name="Ariel"> Ariel <br>
+        <input type="checkbox" name="Rapunzel"> Rapunzel <br>
+
+        <!--INPUT CHECKBOX-->
+        Seleccione la pelicula que desea ver:
+        <br>
+        <input type="radio" name="Peliculas" value="1" > Zootopia<br>
+        <input type="radio" name="Peliculas" value="2" > Zootopia 2<br>
+        <input type="radio" name="Peliculas" value="3" > La Bella y la Bestia<br>
+        <input type="radio" name="Peliculas" value="4" > Moana 2<br>
+        <input type="radio" name="Peliculas" value="5" > Blancanieves<br><br>
+
+        <!--SELECT-->
+        Seleccione su película Disney favorita: <br>
+        <select name="pelicula">
+        <option value="1">El Rey León</option>
+        <option value="2">Frozen</option>
+        <option value="3">Toy Story</option>
+        <option value="4">La Sirenita</option>
+        <option value="5">Aladdín</option>
+        <option value="6">La Bella y la Bestia</option>
+        <option value="7">Mulán</option>
+        <option value="8">Enredados</option>
+        <option value="9">Coco</option>
+        <option value="10">Moana</option>
+        <option value="11">Zootopia</option>
+        <option value="12">Encanto</option>
+        </select>
+        <br>
+        <!--SELECT MULTIPLE-->
+        Seleccione los personajes que le parezcan tiernos: <br>
+        <select name="Personaje_Tierno[]" size="4" multiple>
+        <option value="1">Stitch</option>
+        <option value="2">Baby Yoda</option>
+        <option value="3">Bambi</option>
+        <option value="4">Dumbo</option>
+        <option value="5">Marie </option>
+        <option value="6">Winnie the Pooh</option>
+        <option value="7">Piglet</option>
+        <option value="8">Olaf</option>
+        <option value="9">Pascal </option>
+        <option value="10">Pua (Moana)</option>
+        <option value="11">Baymax </option>
+        <option value="12">Wall-E</option>
+</select>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,214 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+<!--Ejercicios 34 en adelante-->
+<!--SELECT CON AGRUPAMIENTO -->
+Seleccione la princesa o el personaje que desea:
+<br>
+<select name="Articulo">
+    <optgroup label="PRINCESAS DISNEY">
+        <option value="1">Elsa</option>
+        <option value="2">Anna</option>
+        <option value="3">Rapunzel</option>
+        <option value="4">Cenicienta</option>
+        <option value="5">Ariel</option>
+    </optgroup>
+
+    <optgroup label="PERSONAJES DISNEY">
+        <option value="6">Mickey Mouse</option>
+        <option value="7">Minnie Mouse</option>
+        <option value="8">Donald Duck</option>
+        <option value="9">Goofy</option>
+        <option value="10">Stitch</option>
+    </optgroup>
+
+</select>
+</select><br><br>
+<!--Ejercicio 35 -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    </form>
+<!--Ejercicio 36-->
+<form action="registrodatos.php" method="post">
+  <h2>Calculadora Disney:</h2>
+  <input type="button" name="boton#7" value=" 7 ">
+  <input type="button" name="boton#8" value=" 8 ">
+  <input type="button" name="boton#9" value=" 9 ">
+  <input type="button" name="boton/" value=" / ">
+  <br><br>
+  <input type="button" name="boton#4" value=" 4 ">
+  <input type="button" name="boton#5" value=" 5 ">
+  <input type="button" name="boton#6" value=" 6 ">
+  <input type="button" name="boton*" value=" * ">
+  <br><br>
+  <input type="button" name="boton#1" value=" 1 ">
+  <input type="button" name="boton#2" value=" 2 ">
+  <input type="button" name="boton#3" value=" 3 ">
+  <input type="button" name="boton+" value=" + ">
+  <br><br>
+  <input type="button" name="boton#0" value=" 0 ">
+  <input type="button" name="boton=" value=" = ">
+  <input type="button" name="boton-" value=" - ">
+</form>
+<br><br>
+<!--Ejercicio 37-->
+<form action="registrodatos.php" method="post" enctype="multipart/form-data">
+    Ingrese su nombre:
+    <input type="text" name="nombre" size="30"> 
+    <br><br>
+    Seleccione la foto:
+    <input type="file" name="foto"> 
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+<br>
+<!--Ejercicio  38-->
+<form action="registrodatos.php" method="post">
+  <input type="hidden" value="08:30" name="Hora">
+  Ingrese su nombre:
+  <input type="text" name="Nombre" size="30">
+  <br>
+  <input type="submit" value="Enviar.">
+</form>
+<br>
+<!--Ejercicio 39-->
+<form action="registrodatos.php" method="post">
+  <fieldset>
+    <legend>DATOS PERSONALES</legend>
+    Apellidos y nombres:
+    <input type="text" name="Nombre" size="30">
+    <br><br>
+    Documento de identidad:
+    <input type="text" name="Cedula" size="8">
+    <br><br>
+    Fecha de nacimiento:
+    <input type="text" name="Fecha_Nacimiento" size="12">
+    <br><br>
+    Direccion:
+    <input type="text" name="Direccion_personal" size="30">
+    <br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>DATOS LABORALES</legend>
+    Nombre de la empresa:
+    <input type="text" name="Nombre_empresa" size="30">
+    <br><br>
+    Actividad:
+    <input type="text" name="Actividad" size="50">
+    <br><br>
+    Dirección:
+    <input type="text" name="Direccion_empresa" size="30">
+    <br><br>
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form>
+<br>
+<!--Ejercicio 40-->
+<form action="registrodatos.php" method="post">
+  Apellidos y nombres:
+  <input type="text" name="Nombre" size="30"><br>
+  ¿Usted es mayor de edad?:<br>
+  <input type="radio" name="Radio1" checked 
+  value="Si">Si
+  <br>
+  <input type="radio" name="Radio1" value="No">No
+  <br>
+  Telefono:
+  <input type="text" value="+57-" name="Telefono" 
+  size="15"><br>
+  <textarea name="Comentarios" rows="5" cols="70">
+Aqui puede escribir sus opiniones
+  </textarea><br>
+  <input type="submit" value="Enviar">
+</form>
+<br>
+<!--Ejercicio 41-->
+<form action="registrodatos.php" method="post">
+  <input type="text" name="Text1" size="6" tabindex="1">
+  <input type="text" name="Text2" size="6" tabindex="4">
+  <input type="text" name="Text3" size="6" tabindex="7">
+  <br>
+  <input type="text" name="Text4" size="6" tabindex="2">
+  <input type="text" name="Text5" size="6" tabindex="5">
+  <input type="text" name="Text6" size="6" tabindex="8">
+  <br>
+  <input type="text" name="Text7" size="6" tabindex="3">
+  <input type="text" name="Text8" size="6" tabindex="6">
+  <input type="text" name="Text9" size="6" tabindex="9">
+  <br><br>
+  <input type="submit" value="Enviar" tabindex="10">
+</form>
+<br>
+<!--Ejercicio 42-->
+<form action="registrardatos.php" method="post">
+  Elige la categoria de deseas visitar:
+  <br>
+  <input type="radio" name="Seccion" value="1" disabled>Niños<br>
+  <input type="radio" name="Seccion" value="2">Adolescentes<br>
+  <input type="radio" name="Seccion" value="3">Adultos<br>
+  <input type="submit" value="Enviar">
+</form>
+<br>
+<!--Ejercicio 43-->
+<form action="registrodatos.php" method="post">
+  Ingrese su nombre completo: 
+  <input type="text" name="Nombre" maxlength="20" size="20">
+  <br>
+  Ingrese su contraseña: 
+  <input type="password" name="Contraseña" maxlength="12" size="12">
+  <br>
+  <input type="submit" value="Enviar">
+  </form>
+  <br>
+  <!--Ejercicio 44-->
+  <form action="registrodatos.php" method="post">
+  Ingrese su nombre:
+  <input type="text" name="Nombre" size="30" value="Coorporacion Gaby" readonly><br>
+  Contrato:<br>
+  <textarea name="Comentarios" rows="5" cols="60" readonly>
+En la presente vamos a hablar de...
+</textarea> 
+  <br>
+  <input type="submit" value="Enviar">
+</form>
+<br>
+<!--Ejercicio 45-->
+<h2>Reclamos</h2>
+<form action="gabytrejo.reclamos@gmail.com" method="post" enctype="text/plain">
+  Ingrese su nombre: 
+  <input type="text" name="Nombre" size="20">
+  <br><br>
+  Ingrese su direccion: 
+  <input type="text" name="Direccion" size="30">
+  <br><br>
+  Informe de su problema:
+  <br><br>
+  <textarea rows="5" cols="40" name="Problema"></textarea>
+  <br>
+  <input type="submit" value="Enviar">
+</form>
+<br>
+<!--Ejercicio 46-->
+<form action="registrardatos.php" method="post">
+  <fieldset>
+  <legend>FORMULARIO DE COMENTARIOS</legend>
+  <label for="nombre">Ingrese su nombre:</label>
+  <input type="text" name="Nombre" size="30" id="Nombre"><br><br>
+  <label for="Correo">Ingrese su correo:</label>
+  <input type="text" name="Correo" size="50" id="correo"><br>
+  <label for="comentarios">Comentarios:</label><br>
+  <textarea name="Comentarios" rows="5" cols="60" 
+  id="Comentarios"></textarea> 
+  <br>
+  <input type="submit" value="Enviar">
+  </fieldset>
+</form>
+</body>
+</html>
+
